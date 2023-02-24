@@ -1,5 +1,15 @@
 /* Typographie */
-body {font-family: sans-serif;}
+@font-face {
+  font-family: "Proxima-Nova" ;
+  src: url(Font/Proxima\ Nova\ Font.otf);
+
+  font-family: "Work-sans_regular";
+  src: url(Font/WorkSans-Regular.ttf);
+}
+
+
+body {font-family: "Work-sans_regular";}
+header {font-family: "Proxima-Nova";}
 
 
 /* Mise en page */
@@ -7,18 +17,65 @@ body {font-family: sans-serif;}
 /* Header */
 header {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    padding: 60px;
+    text-align: center;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  
+  }
 
+
+  
+  #TopNav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 
   }
   
+  /* Main mise en page */
+
+Main{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+
+
+
+  /* Images mise en page */
+
+#Photo_salon{
+  width: 150px;
+  height: 150px;
+
+
+}
+
+
+#Logo_Header{
+
+  width: 100 px;
+  height: 100 px;
+}
+
+
+
+
 
   
-  
-  
+  .footer{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
   
+
+  }
 
   
   
