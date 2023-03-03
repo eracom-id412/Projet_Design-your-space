@@ -5,7 +5,15 @@
 
   font-family: "Work-sans_regular";
   src: url(Font/WorkSans-Regular.ttf);
+
 }
+
+
+p{
+  font-size: 14px;
+  font-weight: 100;
+}
+
 
 
 body {font-family: "Work-sans_regular";}
@@ -14,69 +22,203 @@ header {font-family: "Proxima-Nova";}
 
 /* Mise en page */
 
+
+
+
 /* Header */
 header {
     display: flex;
     flex-direction: row;
     padding: 60px;
     text-align: center;
-    font-size: 20px;
+    font-size: 13px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    background-color: #4E443C;
+    margin-bottom: 60px;
   
   }
 
 
   
-  #TopNav{
+.Navigation{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+
+}
+
+
+
+.TopNav{
+    width: 40vw;
     display: flex;
     flex-direction: row;
     text-align: center;
+    }
+  
+
+.TopNav p{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Proxima-Nova" ;
+
+}
+
+
+.TopNav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.Petits_logos{
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+.Petits_logos_header img{
+  width: 2vw;
+  
+  }
+
+.Petits_logos_header{
+    width: 4vw;
+  }
+
+
+.Logo_vert {
+   width: 30vw;
+   justify-content: center;
+
 
   }
-  
+
+.Logo_vert img{
+width: 50%;
+
+}
+
+
+
+
   /* Main mise en page */
 
-Main{
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.Main_box{
+
+  margin-right: 80px;
+  margin-left: 80px;
+  display: flex;
+ flex-direction: row;
+}
+
+.Main{
+margin-bottom: 5rem;
+
+}
+
+
+
+.Main_image img {
+  max-width: 80%;
+
+
+}
+
+
+.Learn_more img{
+  margin-top: 30px;
+  width: 20%;
+   
+}
+
+h3{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+
+ /* Footer mise en page */
+
+
+
+.footer_partie1{
+
+display: flex;
+flex-direction: row;
+margin-right: 60px;
+margin-left: 60px;
+justify-content: center;
+gap: 5rem;
+}
+
+
+
+.Footer_Partie2{
+
+  display: flex;
+  flex-direction: row;
+}
+ footer p {
+
+  color: white;
+ }
+
+ .Service_title{
+  font-weight: bold;
+ }
   
-}
+
+ .About-us_Title{
+  font-weight: bold;
+
+ }
+
+ .Recent_work_title{
+  font-weight: bolder;
+ }
 
 
-
-
-  /* Images mise en page */
-
-#Photo_salon{
-  width: 150px;
-  height: 150px;
-
-
-}
-
-
-#Logo_Header{
-
-  width: 100 px;
-  height: 100 px;
-}
-
-
-
-
-
-  
   .footer{
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  
+    background-color: #201F1D;
 
   }
 
+  .footer a {
+
+    color: white;
+
+  }
   
+
+.Recent-work{
+
+display: flex;
+max-width: 30%;
+
+
+}
+
+
+.Photos_recent-work img {
+
+  width: 20%;
+  margin: 2rem;
+
+}
+
+
+.Footer-logos img{
+  width: 5%;
+ 
+
   
-  
+}
