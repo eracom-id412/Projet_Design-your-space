@@ -1,23 +1,34 @@
+html,body
+{ margin: 0;
+  padding: 0;
+}
+
+
+
+
 /* Typographie */
+
 @font-face {
   font-family: "Proxima-Nova" ;
-  src: url(Font/Proxima\ Nova\ Font.otf);
+  src: url(Font/Proxima_Nova_Font.otf);
 
-  font-family: "Work-sans_regular";
-  src: url(Font/WorkSans-Regular.ttf);
+  
+  font-family: "Work-sans";
+  src: url(Font/WorkSans-VariableFont_wght.ttf);
 
+ 
 }
+
 
 
 p{
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 
 
-body {font-family: "Work-sans_regular";}
-header {font-family: "Proxima-Nova";}
+body {font-family: "Work-sans";}
 
 
 /* Mise en page */
@@ -31,10 +42,12 @@ header {
     flex-direction: row;
     padding: 30px;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     background-color: #4E443C;
-    margin-bottom: 60px
-  
+    margin-bottom: 60px;
+    font-family: "Proxima-Nova";
+
+
   }
 
 
@@ -43,8 +56,7 @@ header {
 
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-
+justify-content: space-between;
 
 }
 
@@ -56,8 +68,9 @@ justify-content: space-around;
     display: flex;
     flex-direction: row;
     margin-right: 80px;
-    margin-left: 100px;
-    justify-content: center;
+    margin-left: 80px;
+    justify-content: space-between;
+  
   
 
     }
@@ -121,6 +134,7 @@ width: 30%;
   margin-left: 120px;
   display: flex;
  flex-direction: row;
+ justify-content: space-between;
 }
 
 .Main{
@@ -159,18 +173,33 @@ h3{
 
  .footer-logo p{
   margin-top: 2rem;
+  width: 25vw;
  }
 
 .footer_partie1{
 
 display: flex;
 flex-direction: row;
-margin-right: 120px;
-margin-left: 120px;
+margin-right: 100px;
+margin-left: 100px;
 margin-bottom: 60px;
 margin-top: 60px;
-justify-content: center;
+justify-content: space-between;
 gap: 5rem;
+
+}
+
+
+
+
+.Service-title{
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.About-us_Title{
+
+  margin-bottom: 1rem;
 }
 
 
@@ -179,8 +208,8 @@ gap: 5rem;
 
   display: flex;
   flex-direction: row;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 100px;
+  margin-left: 100px;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
@@ -189,26 +218,30 @@ gap: 5rem;
  footer p {
 
   color: white;
+ 
  }
 
  .line {
 
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 100px;
+  margin-left: 100px;
  }
 
  .Service_title{
-  font-weight: bold;
+  font-weight: 1000;
+  font-size: xx-large;
  }
   
 
  .About-us_Title{
-  font-weight: bold;
+  font-weight: 1000;
+  font-size: xx-large;
 
  }
 
  .Recent_work_title{
-  font-weight: bolder;
+  font-weight: 1000;
+  font-size: xx-large;
  }
 
 
@@ -234,20 +267,26 @@ max-width: 30%;
 }
 
 .Photos_recent-work{
-  display: flex;
- 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+
+
 }
 
 .Photos_recent-work img {
 
-  width: 10%;
-  height: 10%;
+  width: 50%;
+  height: 50%;
   margin: 1rem;
-  display: inline;
-  position: relative;
+
+  
   
 
 }
+
+
 
 
 .Footer-logos img{
